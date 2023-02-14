@@ -2,7 +2,7 @@ const html5Qrcode = new Html5Qrcode('reader');
 const qrCodeSuccessCallback = (decodedText, decodedResult) =>{
     if(decodedText){
         document.getElementById('show').style.display = 'block';
-        document.getElementById('result').textContent = 'decodedText';
+        document.getElementById('result').textContent = decodedText;
         html5Qrcode.stop();
     }
 }
