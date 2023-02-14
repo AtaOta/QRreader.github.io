@@ -1,6 +1,5 @@
 const html5Qrcode = new Html5Qrcode('reader');
 const qrCodeSuccessCallback = (decodedText, decodedResult) =>{
-    alert(decodedResult)
     if(decodedText){
         document.getElementById('show').style.display = 'block';
         document.getElementById('result').innerText = decodedText;
